@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>kidsBooks</servlet-name>
+        <servlet-class>org.example.web_assignment_session.KidsBooksPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>kidsBooks</servlet-name>
+        <url-pattern>/kids</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>techBooks</servlet-name>
+        <servlet-class>org.example.web_assignment_session.TechBooksPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>techBooks</servlet-name>
+        <url-pattern>/tech</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>orders</servlet-name>
+        <servlet-class>org.example.web_assignment_session.OrderPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>orders</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+
+</web-app>

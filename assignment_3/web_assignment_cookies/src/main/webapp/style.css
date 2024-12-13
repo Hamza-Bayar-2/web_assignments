@@ -1,0 +1,125 @@
+.input-group {
+    position: relative;
+    margin: 28px 0;
+}
+
+.input-group .input-label{
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    font-size: 20px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-group input {
+    height: 35px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+/*type number olannin ok stilini kaldırmak içindir*/
+.input-group input[type="number"]::-webkit-inner-spin-button,
+.input-group input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-group i {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+}
+
+.input-group .plus90 {
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: 7px;
+}
+
+.input-group #phone_number {
+    padding-left: 35px;
+}
+
+.input-group input:focus ~ .input-label,
+.input-group input:valid ~ .input-label{
+    top: -12px;
+    font-size: 15px;
+    color: #4946ED;
+    background-color: white;
+    padding: 0 2px;
+}
+
+.input-group input:focus ~ i,
+.input-group input:valid ~ i{
+    color: #4946ED;
+}
+
+.input-group input:focus ~ .plus90,
+.input-group input:valid ~ .plus90{
+    display: inline;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+    border: 2px solid #4946ED;
+}
+
+.input-checkbox input {
+    width: 20px;
+}
+
+.input-checkbox label {
+    font-size: 20px;
+}
+
+.input-group input:hover ~ .input-label {
+    padding-left: 4px;
+}
+
+.input-checkbox input:checked ~ .input-label {
+    color: #4946ED;
+}
+
+.input-submit {
+    width: 70%;
+}
+
+.input-submit input {
+    position: relative;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #4946ED;
+    box-shadow: 0 7px 8px #888888;
+    border-radius: 50px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    transition: .5s;
+}
+
+.input-submit input:hover {
+    top: 2px;
+    box-shadow: 0 5px 8px #888888;
+    background-color: #4946ED;
+}
+
+label.error {
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    color: red;
+    background: transparent;
+}
+
+.button4{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+
